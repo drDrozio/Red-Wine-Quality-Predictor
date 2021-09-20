@@ -73,10 +73,11 @@ Best fit model -> SVC(kernel='linear',C=100,decision_function_shape='ovo',gamma=
 with score -> (99.72%, 99.81%)
 
 
-## Application Deployment
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+### Application Deployment
+The model is deployed using Django framework with templating for basic frontend. The Django application is deployed on Heroku.
 
-Please make sure to update tests as appropriate.
+![plot](./Flowchart.png)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
