@@ -1,21 +1,20 @@
 {% extends 'wine_app/base.html' %}
 {% load static %}
 {% block content %}
-<img src="{% static '/images/wine1.jpeg' %}" class="d-block w-100" alt="...">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             
         <div class="carousel-item active">
-            <img src="{% static 'images/wine1.jpeg' %}" class="d-block w-100" alt="...">
+            <img src="{% static '/images/wine2.jpeg' %}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static '/images/wine2.jpg' %}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="..." class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
         </div>
-        </div>
-    </div>
+    </div> -->
     <div class="form-container">
         <form method="POST" action="{% url 'winequality'%}">
             {% csrf_token %}

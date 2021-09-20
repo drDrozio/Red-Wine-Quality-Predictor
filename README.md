@@ -76,7 +76,17 @@ with score -> (99.72%, 99.81%)
 ### Application Deployment
 The model is deployed using Django framework with templating for basic frontend. The Django application is deployed on Heroku.
 
+Flowchart of application process :-
 ![plot](./Flowchart.png)
+
+### Screenshots
+![plot](./Opening1.png)
+
+![plot](./Opening2.png)
+
+![plot](./Opening3.png)
+
+![plot](./Result.png)
 
 
 ## License

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(#3@c&)9+$zf_!gaqyg^y5p2!%n(u4ku9_(+g88p2mep8guj3f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['red-wine-qlty-pred.herokuapp.com']
+ALLOWED_HOSTS = ['red-wine-qlty-pred.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -64,6 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
@@ -121,6 +122,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_DIRS = ( os.path.join('static'), )
+
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

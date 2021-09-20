@@ -2759,10 +2759,15 @@ p {
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: red ;
+  background-color: white ;
 }
 
 .form-container input {
   width: 100%;
   clear: both;
+}
+
+
+.carousel {
+  height: 100% !important;
 }
